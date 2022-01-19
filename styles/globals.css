@@ -17,3 +17,27 @@ a {
 * {
   box-sizing: border-box;
 }
+
+h1 {
+  @apply text-2xl text-black font-semibold mb-2;
+}
+
+.sidebar {
+  @apply flex-none text-gray-500 p-5 border-r border-gray-200 overflow-y-scroll scrollbar-hide h-screen;
+}
+
+input {
+  @apply border rounded p-2 w-full;
+}
+
+.card {
+  @apply flex justify-between border rounded-lg mb-3 p-5;
+}
+
+.sm-h {
+  @apply text-xs uppercase;
+}
+
+footer {
+  @apply relative top-[75%] text-center;
+}
