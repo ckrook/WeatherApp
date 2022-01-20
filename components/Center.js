@@ -1,14 +1,19 @@
+import { useRecoilState } from "recoil";
+import { selectedIdState } from "../atoms/weatherAtoms";
+import { useEffect } from "react";
+import { api } from "../lib/api";
+
 function Center() {
-  return (
-    <div className="flex flex-grow p-5">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
-        eveniet, magnam voluptates animi veniam minus dolorum nam architecto eos
-        nesciunt distinctio nobis nostrum beatae quam aspernatur blanditiis et
-        nemo iure?
-      </p>
-    </div>
-  );
+  const [selectedId, setSelectedId] = useRecoilState(selectedIdState);
+
+  if (selectedId) {
+    console.log(selectedId);
+    return (
+      <div className="flex flex-grow p-5">
+        <p>{selectedId}</p>
+      </div>
+    );
+  }
 }
 
 export default Center;

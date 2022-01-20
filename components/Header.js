@@ -3,11 +3,7 @@ import { useRecoilState } from "recoil";
 import { weatherIdState } from "../atoms/weatherAtoms";
 import { motion } from "framer-motion";
 import { WiDayCloudyWindy } from "react-icons/wi";
-
-const api = {
-  key: "70a2b23f6e6622745d4179d63b7e8cab",
-  base: "https://api.openweathermap.org/data/2.5/",
-};
+import { api } from "../lib/api";
 
 function Header() {
   const [input, setInput] = useState("");

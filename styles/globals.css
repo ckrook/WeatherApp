@@ -31,7 +31,7 @@ input {
 }
 
 .card {
-  @apply flex justify-between border rounded-lg mb-3 p-5;
+  @apply flex justify-between border rounded-lg mb-3 p-5 cursor-pointer;
 }
 
 .sm-h {
