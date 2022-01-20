@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useRecoilState } from "recoil";
 import { weatherIdState } from "../atoms/weatherAtoms";
 import { motion } from "framer-motion";
+import { WiDayCloudyWindy } from "react-icons/wi";
 
 const api = {
   key: "70a2b23f6e6622745d4179d63b7e8cab",
@@ -38,7 +39,10 @@ function Header() {
   return (
     <div className="text-center mt-4 mb-16">
       <div className="mb-8">
-        <h1>Weather App</h1>
+        <div className="flex justify-center items-center">
+          <WiDayCloudyWindy className="w-10 h-10 text-black" />
+          <h1>Weather App</h1>
+        </div>
         <p>Simple weather app to get current weather by city</p>
       </div>
       <input
