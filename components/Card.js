@@ -1,25 +1,38 @@
-import { ChevronRightIcon, LocationMarkerIcon } from "@heroicons/react/solid";
+import { ChevronRightIcon } from "@heroicons/react/solid";
+import {
+  WiDirectionUpRight,
+  WiDirectionUpLeft,
+  WiDirectionDownLeft,
+  WiDirectionDownRight,
+  WiDirectionDown,
+  WiDirectionLeft,
+  WiDirectionRight,
+  WiDirectionUp,
+} from "react-icons/wi";
 
-function Card() {
+function Card({ weather }) {
   return (
     <div className="card">
       <div>
         <div className="flex items-center">
           <div className="w-4 h-4 mr-2 bg-red-500 rounded-full" />
-          <h3>Stockholm</h3>
+          <h3>{weather.name}</h3>
         </div>
         <ol className="flex space-x-12">
           <li>
             <span className="sm-h">Sky</span>
-            <p>Clear</p>
+            <p>{weather.weather[0].main}</p>
           </li>
           <li>
             <span className="sm-h">Temp</span>
-            <p>2</p>
+            <p>{weather.main.temp}°C</p>
           </li>
           <li>
             <span className="sm-h">Wind</span>
-            <p>Test</p>
+            <div className="flex items-center">
+              <p>{weather.wind.speed}</p>
+              <WiDirectionUpRight className="w-7 h-7" />
+            </div>
           </li>
         </ol>
       </div>

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useRecoilState } from "recoil";
-import { textState } from "../atoms/weatherAtoms";
+import { weatherIdState } from "../atoms/weatherAtoms";
 import { motion } from "framer-motion";
 
 const api = {
@@ -11,8 +11,9 @@ const api = {
 function Header() {
   const [input, setInput] = useState("");
   const [weather, setWeather] = useState([]);
+  const [weatherId, setWeatherId] = useRecoilState(weatherIdState);
   useEffect(() => {
-    console.log(weather);
+    setWeatherId(weather);
   }, [weather]);
 
   const search = (evt) => {
