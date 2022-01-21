@@ -51,3 +51,7 @@ footer {
 .Center-header {
   @apply flex text-white text-6xl;
 }
+
+.forecast-box {
+  @apply flex p-8 rounded-3xl bg-white;
+}
