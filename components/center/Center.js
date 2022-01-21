@@ -1,11 +1,11 @@
 import { useRecoilState } from "recoil";
-import { selectedIdState } from "../atoms/weatherAtoms";
+import { selectedIdState } from "../../atoms/weatherAtoms";
 import { useEffect } from "react";
-import { api } from "../lib/api";
+import { api } from "../../lib/api";
 import { useState } from "react/cjs/react.development";
-import MainHeader from "./center/MainHeader";
+import MainHeader from "./MainHeader";
 import { motion } from "framer-motion";
-import Forecast from "./center/Forecast";
+import Forecast from "./Forecast";
 
 function Center() {
   const [selectedId, setSelectedId] = useRecoilState(selectedIdState);

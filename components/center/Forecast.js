@@ -12,14 +12,13 @@ function Forecast({ forecast }) {
   }, [forecast]);
 
   return (
-    <div className="flex justify-between space-x-8">
+    <div className="grid grid-cols-8 space-x-8">
       {forecast.daily &&
         forecast.daily.map((f, index) => {
           return (
             <div className="forecast-box text-center">
-              <div>
-                {date(index)} {Math.floor(f.temp.day)} °C
-              </div>
+              <div>{date(index)}</div>
+              <div>{Math.floor(f.temp.day)} °C</div>
             </div>
           );
         })}
