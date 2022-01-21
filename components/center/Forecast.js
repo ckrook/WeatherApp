@@ -16,8 +16,10 @@ function Forecast({ forecast }) {
       {forecast.daily &&
         forecast.daily.map((f, index) => {
           return (
-            <div className="forecast-box">
-              {date(index)} {Math.floor(f.temp.day)} °C
+            <div className="forecast-box text-center">
+              <div>
+                {date(index)} {Math.floor(f.temp.day)} °C
+              </div>
             </div>
           );
         })}

@@ -6,6 +6,8 @@ import { WiDayCloudyWindy } from "react-icons/wi";
 import { api } from "../lib/api";
 import { colors } from "../lib/colors";
 
+import "animate.css";
+
 function Header() {
   const [input, setInput] = useState("");
   const [weather, setWeather] = useState([]);
@@ -21,6 +23,13 @@ function Header() {
         .then((result) => {
           if (result.cod === "404") {
             setInput("");
+            document.getElementById("search-input").className =
+              "animate__animated animate__headShake";
+            setTimeout(() => {
+              document
+                .getElementById("search-input")
+                .classList.remove("animate__headShake");
+            }, 500);
             return console.log("Visa animation not found animation");
           }
           setWeather((weather) => [...weather, result]);
@@ -43,6 +52,7 @@ function Header() {
         <p>A simple weather app to get current weather by city.</p>
       </div>
       <input
+        id="search-input"
         value={input}
         onChange={(e) => {
           setInput(e.target.value);
@@ -50,6 +60,7 @@ function Header() {
         onKeyPress={search}
         type="text"
         placeholder="Search city.."
+        className="animate__animated"
       />
     </div>
   );
