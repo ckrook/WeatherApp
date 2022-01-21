@@ -2,11 +2,9 @@ import { ChevronRightIcon } from "@heroicons/react/solid";
 import { windDirection } from "../lib/wind";
 import { useRecoilState } from "recoil";
 import { selectedIdState } from "../atoms/weatherAtoms";
-import { useEffect } from "react";
 
-function Card({ weather }) {
+function Card({ weather, color }) {
   const [selectedId, setSelectedId] = useRecoilState(selectedIdState);
-
   return (
     <div
       className="card"
@@ -16,7 +14,7 @@ function Card({ weather }) {
     >
       <div>
         <div className="flex items-center">
-          <div className="w-4 h-4 mr-2 rounded-full bg-red-500" />
+          <div className={"w-4 h-4 mr-2 rounded-full bg-red-500"} />
           <h3>{weather.name}</h3>
         </div>
         <ol className="flex space-x-12">

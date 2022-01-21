@@ -7,5 +7,5 @@ export const weatherIdState = atom({
 
 export const selectedIdState = atom({
   key: "selectedIdState",
-  default: [],
+  default: null,
 });

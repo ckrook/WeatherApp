@@ -4,6 +4,7 @@ import { weatherIdState } from "../atoms/weatherAtoms";
 import { motion } from "framer-motion";
 import { WiDayCloudyWindy } from "react-icons/wi";
 import { api } from "../lib/api";
+import { colors } from "../lib/colors";
 
 function Header() {
   const [input, setInput] = useState("");
@@ -39,7 +40,7 @@ function Header() {
           <WiDayCloudyWindy className="w-10 h-10 text-black" />
           <h1>Weather App</h1>
         </div>
-        <p>Simple weather app to get current weather by city</p>
+        <p>A simple weather app to get current weather by city.</p>
       </div>
       <input
         value={input}
