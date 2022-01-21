@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import { api } from "../lib/api";
 import { useState } from "react/cjs/react.development";
 import MainHeader from "./center/MainHeader";
+import { motion } from "framer-motion";
 
 function Center() {
   const [selectedId, setSelectedId] = useRecoilState(selectedIdState);
