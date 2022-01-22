@@ -54,5 +54,5 @@ footer {
 }
 
 .forecast-box {
-  @apply flex p-5 rounded-3xl bg-white;
+  @apply flex-col p-5 rounded-3xl bg-white;
 }
