@@ -4,7 +4,6 @@ import { useEffect } from "react";
 import { api } from "../../lib/api";
 import { useState } from "react/cjs/react.development";
 import MainHeader from "./MainHeader";
-import { motion } from "framer-motion";
 import Forecast from "./Forecast";
 import Mainbody from "./Mainbody";
 import Temp from "./Temp";
@@ -28,8 +27,6 @@ function Center() {
       });
   }, [selectedId]);
 
-  // Fetch X days forecast
-  //api.openweathermap.org/data/2.5/forecast/daily?id={city ID}&cnt={cnt}&appid={API key}
   useEffect(() => {
     if (!selectedId) return;
     fetch(

@@ -1,9 +1,3 @@
-import { useEffect } from "react";
-import { useState } from "react/cjs/react.development";
-import { time } from "../../lib/date";
-import { WiSunrise } from "react-icons/wi";
-import { WiSunset } from "react-icons/wi";
-
 function Temp({ weather }) {
   return (
     <div>
