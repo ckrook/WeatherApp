@@ -1,11 +1,8 @@
 import { useEffect, useState } from "react";
 import { useRecoilState } from "recoil";
 import { weatherIdState } from "../atoms/weatherAtoms";
-import { motion } from "framer-motion";
 import { WiDayCloudyWindy } from "react-icons/wi";
 import { api } from "../lib/api";
-import { colors } from "../lib/colors";
-
 import "animate.css";
 
 function Header() {
