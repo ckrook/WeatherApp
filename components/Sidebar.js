@@ -5,8 +5,6 @@ import { useRecoilState } from "recoil";
 import { weatherAtoms, weatherIdState } from "../atoms/weatherAtoms";
 
 function Sidebar() {
-  const [weatherId, setWeatherId] = useRecoilState(weatherIdState);
-
   return (
     <div className="sidebar">
       <Header />

@@ -21,6 +21,17 @@ function Header() {
       fetch(`${api.base}weather?q=${input}&units=metric&APPID=${api.key}`)
         .then((res) => res.json())
         .then((result) => {
+          if (result.cod === "400") {
+            setInput("");
+            document.getElementById("search-input").className =
+              "animate__animated animate__headShake";
+            setTimeout(() => {
+              document
+                .getElementById("search-input")
+                .classList.remove("animate__headShake");
+            }, 500);
+            return;
+          }
           if (result.cod === "404") {
             setInput("");
             document.getElementById("search-input").className =
@@ -30,17 +41,13 @@ function Header() {
                 .getElementById("search-input")
                 .classList.remove("animate__headShake");
             }, 500);
-            return console.log("Visa animation not found animation");
+            return;
           }
           setWeather((weather) => [...weather, result]);
           setInput("");
         });
     }
   };
-
-  // Lagrar det som skrivs in i input
-  // När enter trycks så fetchar vi data
-  // från openweather api
 
   return (
     <div className="text-center mt-4 mb-16">

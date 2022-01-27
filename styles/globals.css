@@ -54,5 +54,23 @@ footer {
 }
 
 .forecast-box {
+  @apply flex-col my-5 text-center;
+}
+
+.card {
   @apply flex-col p-5 rounded-3xl bg-white;
+}
+
+.progressbar-wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.progressbar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(121, 203, 255);
+  z-index: -1;
 }

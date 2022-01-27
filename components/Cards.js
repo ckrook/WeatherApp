@@ -9,18 +9,14 @@ import { useEffect, useState } from "react";
 function Cards() {
   // Lagra array med alla städer
   // Ta emot fetch och printa ut en card component
-  const [weatherId, setWeatherId] = useRecoilState(weatherIdState);
-  const [color, setColor] = useState(null);
-
-  useEffect(() => {
-    setColor(color);
-  }, [weatherId]);
+  const [weatherId] = useRecoilState(weatherIdState);
 
   return (
     <div>
       {weatherId.map((w) => {
         return (
           <motion.div
+            key={w.id}
             initial={{ y: -40, scale: 0.2 }}
             animate={{ y: 0, scale: 1 }}
             transition={{
@@ -29,7 +25,7 @@ function Cards() {
               damping: 20,
             }}
           >
-            <Card key={w.id} weather={w} color={color} />
+            <Card key={w.id} weather={w} />
           </motion.div>
         );
       })}

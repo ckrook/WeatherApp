@@ -6,9 +6,11 @@ import { useState } from "react/cjs/react.development";
 import MainHeader from "./MainHeader";
 import { motion } from "framer-motion";
 import Forecast from "./Forecast";
+import Mainbody from "./Mainbody";
+import Temp from "./Temp";
 
 function Center() {
-  const [selectedId, setSelectedId] = useRecoilState(selectedIdState);
+  const [selectedId] = useRecoilState(selectedIdState);
   const [weather, setWeather] = useState([]);
   const [lat, setLat] = useState([]);
   const [lon, setLon] = useState([]);
@@ -42,8 +44,10 @@ function Center() {
   }, [lon]);
 
   return (
-    <div className="flex-row flex-grow bg-blue-500 p-5">
+    <div className="flex-row flex-grow bg-gray-900 p-5 text-xl space-y-8">
       <MainHeader weather={weather} />
+      <Mainbody weather={weather} />
+      <Temp weather={weather} />
       <Forecast forecast={forecast} />
     </div>
   );
