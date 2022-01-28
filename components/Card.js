@@ -17,7 +17,7 @@ function Card({ weather }) {
           <div className={"w-4 h-4 mr-2 rounded-full bg-red-500"} />
           <h3>{weather.name}</h3>
         </div>
-        <ol className="flex space-x-12">
+        <ol className="flex justify-between space-x-12">
           <li>
             <span className="sm-h">Sky</span>
             <p>{weather.weather[0].main}</p>
@@ -33,12 +33,12 @@ function Card({ weather }) {
               {windDirection(weather.wind.deg)}
             </div>
           </li>
+          <div className="flex items-center">
+            <div>
+              <ChevronRightIcon className="w-5 h-5 text-gray-400" />
+            </div>
+          </div>
         </ol>
-      </div>
-      <div className="flex justify-end items-center">
-        <div>
-          <ChevronRightIcon className="w-5 h-5 text-gray-400" />
-        </div>
       </div>
     </div>
   );
