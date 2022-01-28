@@ -11,7 +11,7 @@ function Header() {
   const [weatherId, setWeatherId] = useRecoilState(weatherIdState);
   useEffect(() => {
     setWeatherId(weather);
-  }, [weather]);
+  }, [weather, setWeatherId]);
 
   const search = (evt) => {
     if (evt.key === "Enter") {

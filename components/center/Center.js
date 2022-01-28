@@ -21,6 +21,7 @@ function Center() {
       .then((res) => res.json())
       .then((result) => {
         if (result.cod === "404") return console.log("No city is choosen");
+        if (result.cod === "400") return console.log("No city is choosen");
         setLat(result.coord.lat);
         setLon(result.coord.lon);
         setWeather(result);
@@ -29,16 +30,19 @@ function Center() {
 
   useEffect(() => {
     if (!selectedId) return;
+    if (lat.length < 1) return;
+    if (lon.length < 1) return;
     fetch(
       `${api.base}/onecall?lat=${lat}&lon=${lon}&units=metric&appid=${api.key}`
     )
       .then((res) => res.json())
       .then((result) => {
         if (result.cod === "404") return console.log("No city is choosen");
+        if (result.cod === "400") return console.log("No city is choosen");
         setForecast(result);
         console.log(result, "forecast");
       });
-  }, [lon]);
+  }, [lon, lat, selectedId]);
 
   return (
     <div className="flex-row flex-grow bg-gray-900 p-5 text-xl space-y-8">

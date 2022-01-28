@@ -3,7 +3,7 @@ import { windDirection } from "../lib/wind";
 import { useRecoilState } from "recoil";
 import { selectedIdState } from "../atoms/weatherAtoms";
 
-function Card({ weather, color }) {
+function Card({ weather }) {
   const [selectedId, setSelectedId] = useRecoilState(selectedIdState);
   return (
     <div

@@ -21,7 +21,7 @@ function Forecast({ forecast }) {
         {forecast.daily &&
           forecastList.map((f, index) => {
             return (
-              <div key={f.date} className="forecast-box">
+              <div key={index} className="forecast-box">
                 <div>{date(index)}</div>
                 <div>{Math.floor(f.temp.day)} °C</div>
               </div>
