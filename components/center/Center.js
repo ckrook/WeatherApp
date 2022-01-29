@@ -2,7 +2,7 @@ import { useRecoilState } from "recoil";
 import { selectedIdState } from "../../atoms/weatherAtoms";
 import { useEffect } from "react";
 import { api } from "../../lib/api";
-import { useState } from "react/cjs/react.development";
+import { useState } from "react";
 import MainHeader from "./MainHeader";
 import Forecast from "./Forecast";
 import Mainbody from "./Mainbody";
