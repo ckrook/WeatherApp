@@ -1,3 +1,5 @@
+# Weather App
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Summary
@@ -5,7 +7,7 @@ This is a simple weather app where you can get realtime weather data by choice o
 Add as many cities as you want to the sidebar and view detailed information by clicking on the card components.
 
 ## Objectives
-I built this weather app to demonstrate my knowledge in React/NextJS and to showcase my knowledge in fetching data from an API.
+I built this weather app to demonstrate my knowledge in React/NextJS and to showcase my knowledge in fetching data from an API. <br>
 
 
 ## Tools
