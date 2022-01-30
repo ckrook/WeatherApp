@@ -5,11 +5,11 @@ This is a simple weather app where you can get realtime weather data by choice o
 Add as many cities as you want to the sidebar and view detailed information by clicking on the card components.
 
 ## Objectives
-I built this weather app to demonstrate my knowledge in React/NextJS and to showcase that I know how to fetch data from an API.
+I built this weather app to demonstrate my knowledge in React/NextJS and to showcase my knowledge in fetching data from an API.
 
 
 ## Tools
-For the project, I worked with the following tools:<br>
+For this project, I worked with the following tools:<br>
 <ul>
   <li>React</li>
     <li>NextJs</li>
@@ -24,6 +24,9 @@ When it comes to making the site responsive for mobile I found it a little bit d
 I could solve this by letting the end user toggling back and forth between the Sidebar - Center component on mobile devices.<br> 
 But instead I chose to not put to much effort into the design, rather showcase that I understand how to fetch key data.
 
+
+## Conclusion
+For my next project I would like to try axios and fetch data within the getInitialProps since this is best practice.<br>
 
 ## Installation
 
