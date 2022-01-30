@@ -9,13 +9,20 @@ I built this weather app to demonstrate my knowledge in React/NextJS and to show
 
 
 ## Tools
-For the project, I worked with the following tools:
-React, NextJS, Tailwind, OpenWeather API
+For the project, I worked with the following tools:<br>
+<ul>
+  <li>React</li>
+    <li>NextJs</li>
+    <li>Tailwind</li>
+    <li>OpenWeather API</li>
+  </ul>
+
 
 ## Styling
 I got the design inspiration from my friend Samuel Kraft who has built this awesome <a href="https://routes.samuelkraft.com/">running app</a>.<br>
 When it comes to making the site responsive for mobile I found it a little bit difficult since I'm only working with a Sidebar and Center component.<br><br>
-I could solve this by letting the end user toggling back and forth between the Sidebar - Center component on mobile devices. But instead I chooced to not put to much effort into the design, rather showcase that I understand how to fetch key data.
+I could solve this by letting the end user toggling back and forth between the Sidebar - Center component on mobile devices.<br> 
+But instead I chose to not put to much effort into the design, rather showcase that I understand how to fetch key data.
 
 
 ## Installation
