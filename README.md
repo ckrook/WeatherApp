@@ -2,6 +2,8 @@
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+Checkout the project live <a href="https://weatherapp-next.vercel.app/" target="_blank">here<a/>
+
 ## Summary
 This is a simple weather app where you can get realtime weather data by choice of city. <br>
 Add as many cities as you want to the sidebar and view detailed information by clicking on the card components.
