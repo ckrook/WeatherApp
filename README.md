@@ -30,6 +30,9 @@ But instead I chose to not put to much effort into the design, rather showcase t
 ## Conclusion
 For my next project I would like to try axios and fetch data within the getInitialProps since this is best practice.<br>
 
+## Preview
+![](weather.gif)
+
 ## Installation
 
 First, run the development server:
@@ -42,4 +45,3 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-![](weather.gif)
