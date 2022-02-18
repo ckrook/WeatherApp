@@ -6,6 +6,9 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 This is a simple weather app where you can get realtime weather data by choice of city. <br>
 Add as many cities as you want to the sidebar and view detailed information by clicking on the card components.
 
+## Preview
+![](weather.gif)
+
 ## Objectives
 I built this weather app to demonstrate my knowledge in React/NextJS and to showcase my knowledge in fetching data from an API. <br>
 
@@ -29,9 +32,6 @@ But instead I chose to not put to much effort into the design, rather showcase t
 
 ## Conclusion
 For my next project I would like to try axios and fetch data within the getInitialProps since this is best practice.<br>
-
-## Preview
-![](weather.gif)
 
 ## Installation
 
