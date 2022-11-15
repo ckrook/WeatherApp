@@ -16,7 +16,7 @@ I built this weather app to demonstrate my knowledge in React/NextJS and to show
 ## Tools
 For this project, I worked with the following tools:<br>
 <ul>
-  <li>React</li>
+    <li>React</li>
     <li>NextJs</li>
     <li>Tailwind</li>
     <li>OpenWeather API</li>
